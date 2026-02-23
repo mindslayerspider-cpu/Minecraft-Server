@@ -1,0 +1,15 @@
+# Redmi Note 8 gaming runtime tuning (conservative baseline)
+#
+# IMPORTANT:
+# - Keep this small and validate each property against your ROM + kernel + vendor stack.
+# - Unknown properties are typically ignored, but aggressive values can hurt battery/thermals.
+
+# Prefer SkiaGL where supported for smoother UI/game overlays.
+debug.hwui.renderer=skiagl
+
+# Keep one extra framebuffer in flight to reduce jank under load.
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Mild thermal hint key for custom thermal services.
+# No-op if your vendor thermal stack does not consume it.
+vendor.gaming.thermal_profile=balanced
