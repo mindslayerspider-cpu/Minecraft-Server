@@ -1,4 +1,4 @@
-# DexOS product registrations for Redmi Note 8 (ginkgo)
+# DexOS product registrations for Redmi Note 8 (ginkgo) - Android 11
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/dexos_ginkgo.mk

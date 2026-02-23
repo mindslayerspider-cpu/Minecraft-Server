@@ -1,15 +1,20 @@
-# DexOS for Redmi Note 8 (ginkgo) — Gaming ROM Starter
+# DexOS 11 for Redmi Note 8 (ginkgo) — Gaming ROM Starter
 
-This is a **build-safe starter layer** for **DexOS** on Redmi Note 8 (`ginkgo`) that you can drop into an AOSP/LineageOS tree and then tune for gaming.
+This is a **build-safe starter layer** for **DexOS (Android 11 / R)** on Redmi Note 8 (`ginkgo`) that you can drop into an AOSP/LineageOS tree and then tune for gaming.
 
 > It is not a full ROM by itself. You still need a working device tree, vendor blobs, and kernel source for ginkgo.
 
 ## What is included
 
-- `AndroidProducts.mk`: registers DexOS lunch target(s).
-- `dexos_ginkgo.mk`: DexOS product definition for ginkgo.
+- `AndroidProducts.mk`: registers DexOS Android 11 lunch target(s).
+- `dexos_ginkgo.mk`: DexOS 11 product definition for ginkgo.
 - `device.mk`: conservative product-level gaming defaults.
 - `vendor.prop`: minimal runtime tuning properties.
+
+## Android version target
+
+- Base target: **Android 11 (R)**.
+- Typical source bases: AOSP 11 or LineageOS 18.1 trees for `ginkgo`.
 
 ## Why this version is safer
 
@@ -20,7 +25,7 @@ This starter avoids non-guaranteed package names and aggressive defaults that ca
 1. Copy this folder into your ROM tree, for example:
    - `device/xiaomi/ginkgo-gaming/`
 2. Ensure your build system sees `AndroidProducts.mk` in this folder.
-3. Build DexOS:
+3. Build DexOS 11:
 
 ```bash
 source build/envsetup.sh
