@@ -20,7 +20,7 @@ This is a **build-safe starter layer** for **DexOS (Android 11 / R)** on Redmi N
 
 This starter avoids non-guaranteed package names and aggressive defaults that can cause build failures or unstable runtime behavior across different ROM trees.
 
-## How to integrate
+## How to integrate (for ROM builders)
 
 1. Copy this folder into your ROM tree, for example:
    - `device/xiaomi/ginkgo-gaming/`
@@ -32,6 +32,12 @@ source build/envsetup.sh
 lunch dexos_ginkgo-userdebug
 m bacon -j$(nproc)
 ```
+
+## How end users can download/install
+
+- Publish your built ROM zip in releases (example: `DexOS-11-ginkgo-2026xxxx.zip`).
+- Share checksums (SHA256) alongside release notes.
+- Point users to `docs/INSTALL.md` for recovery install steps.
 
 ## Extending for stronger gaming performance
 
