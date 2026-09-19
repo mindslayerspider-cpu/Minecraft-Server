@@ -1,0 +1,21 @@
+plugins {
+    id 'application'
+}
+
+group = 'com.mssclient'
+version = '0.1.0'
+
+java { sourceCompatibility = JavaVersion.VERSION_21; targetCompatibility = JavaVersion.VERSION_21 }
+
+ext.javafxVersion = '23.0.2'
+ext.javafxPlatform = System.getProperty('os.name').toLowerCase().contains('win') ? 'win' : (System.getProperty('os.name').toLowerCase().contains('mac') ? 'mac' : 'linux')
+
+dependencies {
+    implementation "org.openjfx:javafx-controls:${javafxVersion}:${javafxPlatform}"
+    implementation "org.openjfx:javafx-fxml:${javafxVersion}:${javafxPlatform}"
+    implementation "org.openjfx:javafx-web:${javafxVersion}:${javafxPlatform}"
+}
+
+application { mainModule = 'com.mssclient'; mainClass = 'com.mssclient.app.MssClientApp' }
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8'; options.compilerArgs += ['-Xlint:deprecation','-Xlint:unchecked'] }

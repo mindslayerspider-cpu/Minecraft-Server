@@ -1,0 +1,10 @@
+.root-shell { -fx-background-color: linear-gradient(to bottom right, #080b12, #121a2a); -fx-font-family: 'Segoe UI', sans-serif; }
+.title { -fx-text-fill: #dff6ff; -fx-font-size: 34px; -fx-font-weight: 800; -fx-effect: dropshadow(gaussian, #00d5ff88, 18, .2, 0, 0); }
+.label, .check-box, .tab-label { -fx-text-fill: #eef7ff; }
+.glass-card { -fx-background-color: rgba(255,255,255,.08); -fx-background-radius: 18; -fx-border-color: rgba(255,255,255,.18); -fx-border-radius: 18; -fx-effect: dropshadow(gaussian, rgba(0,0,0,.45), 24, .2, 0, 8); }
+.button { -fx-background-color: rgba(255,255,255,.12); -fx-text-fill: white; -fx-background-radius: 12; -fx-padding: 10 16; }
+.button:hover, .primary { -fx-background-color: linear-gradient(to right, #00c6ff, #7c4dff); }
+.tab-pane .tab-header-area .tab-header-background { -fx-background-color: transparent; }
+.tab { -fx-background-color: rgba(255,255,255,.08); -fx-background-radius: 12 12 0 0; }
+.progress-bar > .bar { -fx-background-color: linear-gradient(to right, #00ffaa, #00c6ff); }
+.text-area { -fx-control-inner-background: #0b1020; -fx-text-fill: #dff6ff; }
